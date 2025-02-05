@@ -1,12 +1,21 @@
 import React from 'react'
-import Teste from './Teste.tsx'
 import EstiloGlobal from './styles.ts'
+import Sidebar from './containers/Sidebar/index.tsx'
+import Sobre from './containers/Sobre/index.tsx'
+import Projetos from './containers/Projetos/index.tsx'
+import { Container } from './styles.ts'
 
 function App() {
   return (
     <>
       <EstiloGlobal />
-      <Teste />
+      <Container>
+        <Sidebar />
+        <main>
+          <Sobre />
+          <Projetos />
+        </main>
+      </Container>
     </>
   )
 }
